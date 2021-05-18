@@ -1,0 +1,146 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Comfortaa";
+  src: local("Comfortaa"), url(./assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf) format("truetype");
+}
+body{
+  min-height: 100vh;
+  font-family: "Comfortaa" !important;
+}
+h1{
+  font-family: "Brush Script MT";
+  font-size: 4rem !important;
+  color: #333;
+}
+h6{
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: .5px !important;
+}
+#hero{
+  background-color: crimson;
+  background: url(./assets/images/bg-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#hero-container{
+  height: 100vh;
+  background: rgba(220, 20, 60, .15);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.social{
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  a{
+    color: #fff;
+    opacity: .5;
+    margin-right: 1rem;
+    transition: all .3s ease;
+    .fa-2x{
+      font-size: 1.5em !important;
+    }
+  }
+  a:hover{
+    color: rgb(207, 207, 207);
+  }
+}
+.navbar-nav{
+  max-width: 1000px !important;
+}
+.nav-link{
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+}
+p{
+  font-size: .85rem !important;
+}
+.nav{
+  a{
+    color: #999;
+    font-weight: 600 !important;
+    font-size: .9rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    transition: all .3s ease;
+  }
+  a:active, a:hover, a:focus, a.active{
+    font-weight: 800 !important;
+    color: #333;
+  }
+}
+.img-column{
+  display: inline-flex;
+  flex-direction: column;
+}
+.menu-list{
+  list-style: none;
+}
+.menu-desc{
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+}
+.gallery-row{
+  .col-sm-4{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .text-box{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.line{
+  border-left: #999 2px solid;
+  height: 2rem;
+  position: absolute;
+}
+.line-top{
+  top: 0;
+}
+.line-bottom{
+  bottom: 0;
+}
+#contact{
+  .col-sm-3{
+    padding: 0 !important;
+  }
+  .text-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    p{
+      font-weight: 600;
+      margin-top: 1rem;
+      margin-bottom: 0;
+    }
+    small{
+      color: #555;
+    }
+    address{
+      text-align: center;
+    }
+  }
+}
+.btn{
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: .8rem !important;
+}
+.footer{
+  height: calc( 100vh * .4 );
+}
