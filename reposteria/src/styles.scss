@@ -27,12 +27,18 @@ h6{
 }
 #hero-container{
   height: 100vh;
-  background: rgba(220, 20, 60, .15);
+  background: rgba(83, 35, 44, 0.25);
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   user-select: none;
+  .logo{
+    img{
+      opacity: .9 !important;
+      box-shadow: none !important;
+    }
+  }
 }
 .social{
   position: absolute;
@@ -50,6 +56,11 @@ h6{
   a:hover{
     color: rgb(207, 207, 207);
   }
+}
+#navbar{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 .navbar-nav{
   max-width: 1000px !important;
@@ -113,7 +124,7 @@ p{
 .line-bottom{
   bottom: 0;
 }
-#contact{
+#contact-us{
   .col-sm-3{
     padding: 0 !important;
   }
@@ -143,4 +154,62 @@ p{
 }
 .footer{
   height: calc( 100vh * .4 );
+  .logo{
+    opacity: .7;
+  }
+  .f-social{
+    margin-top: 2rem;
+    text-align: center;
+    a{
+      color: #fff;
+      opacity: .5;
+      margin-right: 1rem;
+      transition: all .3s ease;
+      .fa-2x{
+        font-size: 1.5em !important;
+      }
+    }
+    a:hover{
+      color: rgb(207, 207, 207);
+    }
+  }
+  .text-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ccc;
+    p{
+      font-weight: 500;
+      margin-top: 1rem;
+      margin-bottom: 0;
+    }
+    small{
+      color: #aaa;
+    }
+    address{
+      text-align: center;
+    }
+    .footer-pics{
+      display: flex;
+      a{
+        padding: 2px;
+      }
+    }
+  }
+}
+img{
+  opacity: .85;
+  box-shadow: rgba(51, 51, 51, .3) 0 0 0;
+  transition: all .3s ease;
+}
+img:hover{
+  opacity: 1;
+  box-shadow: rgba(51, 51, 51, .15) 0 5px 10px;
+}
+.bg-darker{
+  background-color: rgb(41, 41, 41);
+}
+.text-bottom{
+  text-align: center;
+  color: #aaa;
 }

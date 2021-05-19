@@ -10,6 +10,15 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', (e) => {
+        e.preventDefault();
+        let id:any = anchor.getAttribute('href');
+        document.querySelector(id).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
   }
 
 }
