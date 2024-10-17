@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  test: process.env.TEST_KEY || 'Prod default env test'
 };
