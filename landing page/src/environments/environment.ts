@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  test: process.env.TEST_KEY || 'Estandar env test'
+  test: 'Estandar env test'
 };
 
 /*
